@@ -8,7 +8,7 @@ public class VectorHelper {
         for ( int i = 0 ; i < v.length ; i++){
             for (int k = v.length - 1 ; k > i ; k-- ){
                 if (v[k] < v[k-1]) {
-                    m = v[k] ;
+                    m = v[k-1] ;
                     v[k] = v[k-1] ;
                     v[k-1] = m ;
                 }
